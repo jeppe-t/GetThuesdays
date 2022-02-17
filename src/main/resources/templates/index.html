@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuesdays in marts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<center>
+    <h1>Day calculator</h1>
+    <br>
+    <h2>Number of days in marts = <span th:text="${totalMarts}"></span></h2>
+    <h2>All thuesdays in marts 2022 = <span th:text="${martsLength}"></span></h2>
+    <table id="Tables">
+        <tr>
+            <th>Date of thuesdays:</th>
+        </tr>
+        <tr>
+            <td id="Date" th:text="${marts.get(0)}"></td>
+        </tr>
+        <tr>
+            <td th:text="${marts.get(1)} "></td>
+        </tr>
+        <tr>
+            <td th:text="${marts.get(2)}"></td>
+        </tr>
+        <tr>
+            <td th:text="${marts.get(3)}"></td>
+        </tr>
+        <tr>
+            <td th:text="${marts.get(4)}"></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <p>Kilde: NoName</p>
+</center>
+</body>
+</html>
